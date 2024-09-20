@@ -1,4 +1,5 @@
 import Image from "next/image";
+import * as React from 'react';
 
 const Navbar = () => {
   return (
@@ -9,7 +10,11 @@ const Navbar = () => {
         <input type="text" placeholder="search..." />
       </div>
       {/* ICON AND USER */}
-      <div className=""></div>
+      <div className="">
+        <div className=" bg-white rounded-full w-7 h-7">
+          <Image src="/message.png/" alt="" width={20} height={20}/>
+        </div>
+      </div>
     </div>
   );
 };
